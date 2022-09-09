@@ -1,0 +1,44 @@
+Symbols for each object:
+	
+main.o object:
+	00000000 R const_vriables
+	00000004 D g_variables
+	00000000 T main
+	00000000 D R_ODR
+
+startup.o object:
+    	    U _E_bss
+        	U _E_data
+         	U _E_text
+         	U _S_bss
+         	U _S_data
+         	U _stack_top
+	00000000 W Bus_Fault
+	00000000 T Default_Handler
+	00000000 W H_Fault_Handler
+	         U main
+	00000000 W MM_Fault_Handler
+	00000000 W NMI_Handler
+	0000000c T Reset_Handler
+	00000000 W Usage_Fault_Handler
+	00000000 D vectors
+
+Final excutable Symbols:
+	20000008 B _E_bss
+	20000008 D _E_data
+	0800012f T _E_text
+	20000008 B _S_bss
+	20000000 D _S_data
+	20001008 B _stack_top
+	08000098 W Bus_Fault
+	0800012c T const_vriables
+	08000098 T Default_Handler
+	20000004 D g_variables
+	08000098 W H_Fault_Handler
+	0800001c T main
+	08000098 W MM_Fault_Handler
+	08000098 W NMI_Handler
+	20000000 D R_ODR
+	080000a4 T Reset_Handler
+	08000098 W Usage_Fault_Handler
+	08000000 T vectors

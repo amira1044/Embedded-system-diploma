@@ -51,7 +51,7 @@ void main (void)
 	{
 		R_ODR->pin.pin13 =1;
 		for(int i=0;i<5000;i++);
-		R_ODR->pin.pin13 =0;
+		R_ODR->pin.pin13 = 0;
 		for(int i=0;i<5000;i++);
 	}
 }
