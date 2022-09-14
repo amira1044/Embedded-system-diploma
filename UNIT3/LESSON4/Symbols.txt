@@ -1,0 +1,35 @@
+Symbols for each object:
+
+
+-main.o symbols:
+	00000000 T main
+
+-startup.o symbols:
+         U _E_bss
+         U _E_data
+         U _E_text
+         U _S_bss
+         U _S_data
+00000000 T Default_Handler
+00000000 W H_Fault_Handler
+         U main
+00000000 W NMI_Handler
+0000000c T Reset_Handler
+00000000 b stack_top
+00000000 R v_p_vectors
+
+
+
+Final excutable symbols:
+20000400 B _E_bss
+20000000 D _E_data
+00000130 T _E_text
+20000000 B _S_bss
+20000000 D _S_data
+0000009c T Default_Handler
+0000009c W H_Fault_Handler
+00000010 T main
+0000009c W NMI_Handler
+000000a8 T Reset_Handler
+20000000 b stack_top
+00000000 T v_p_vectors
